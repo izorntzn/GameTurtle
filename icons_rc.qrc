@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/triangleRotated.svg</file>
+    <file>icons/turtleDown.svg</file>
+    <file>icons/turtleLeft.svg</file>
+    <file>icons/turtleRight.svg</file>
+    <file>icons/turtleUp.svg</file>
+    <file>icons/coin.svg</file>
+    <file>icons/triangle.svg</file>
+  </qresource>
+</RCC>
