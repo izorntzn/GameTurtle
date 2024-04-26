@@ -16,6 +16,7 @@ class Game(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         '''Method attribute'''
+        self.a = []
         self.coin = 0
         self.defeat = 0
         self.startPosOne = 120
@@ -41,12 +42,14 @@ class Game(QMainWindow):
 
     '''Label'''
 
-    def label(self, text='', x=1, y=1, w=1, h=1, objName='', font='Arial', size=1):
+    def label(self, text, x, y, w, h, objName, font='Arial', size=1):
         self.userlabel = QtWidgets.QLabel(self.ui.centralwidget)
         self.userlabel.setGeometry(QtCore.QRect(x, y, w, h))
         self.userlabel.setText(text)
         self.userlabel.setFont(QFont(font, size))
         self.userlabel.setObjectName(objName)
+        self.a.append(self.userlabel)
+        print(self.a)
 
     def label_hide(self, time=0):
         t = Timer(time, lambda: self.userlabel.setHidden(True))
