@@ -133,7 +133,7 @@ class Game(QMainWindow):
         if distance < 30:
             self.coin += 1
             self.ui.Number.setText(str(self.coin))
-            x_coin = randint(20,780)
+            x_coin = randint(20, 780)
             y_coin = randint(20, 580)
             self.ui.Coin.setGeometry(QtCore.QRect(x_coin, y_coin, 31, 31))
     '''End'''
